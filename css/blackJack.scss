@@ -1,0 +1,47 @@
+body {
+    background-color: #336633;
+    & .color-white {
+        color: white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: large;
+    }
+}
+
+div.card-place-center {
+    text-align: center;
+    & div.card-place {
+        display: inline-block;
+    }
+    & p {
+        display: inline-block;
+    }
+}
+
+div.button-place {
+    text-align: center;
+}
+
+button {
+    border-radius: 30px;
+    border: 1px solid #c822a4;
+    color: #fff;
+    background: #c822a4;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        color: #fff;
+        border: 1px solid black;
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+div.card-place-center {
+    & img {
+        width: 200px;
+        height: 300px;
+    }
+}

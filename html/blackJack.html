@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="../js/blackjack.js"></script>
+</head>
+
+<body>
+    <p>スタートボタンを押すと試合開始できます。
+        <input type="button" id="startButton" value="スタート" style="WIDTH: 80px; HEIGHT: 40px">
+        <p>敵の手札</p>
+        <p id="enemyHand"></p>
+        <p id="enemyHandNum"></p>
+
+        <p>自分の手札</p>
+        <p id="myHand"></p>
+        <p id="myHandNum"></p>
+        <input type="button" id="hitButton" value="hit" style="WIDTH: 80px; HEIGHT: 40px">
+        <input type="button" id="standButton" value="stand" style="WIDTH: 80px; HEIGHT: 40px">
+        <input type="button" id="againButton" value="再戦" style="WIDTH: 80px; HEIGHT: 40px">
+
+        <!--山札を作成したかを判定するhidden-->
+        <input type="hidden" name="deckJudege">
+</body>
+<div class="window" id="burstMessage" style="display:none;">
+    <p>burstしたのであなたの負けです</p>
+</div>
+<div class="window" id="winMessage" style="display:none;">
+    <p>あなたの勝ちです</p>
+</div>
+<div class="window" id="drowMessage" style="display:none;">
+    <p>引き分けです</p>
+</div>
+<div class="window" id="loseMessage" style="display:none;">
+    <p>あなたの負けです。</p>
+</div>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+  background-color: #336633;
+}
+
+body .color-white {
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: large;
+}
+
+div.card-place-center {
+  text-align: center;
+}
+
+div.card-place-center div.card-place {
+  display: inline-block;
+}
+
+div.card-place-center p {
+  display: inline-block;
+}
+
+div.button-place {
+  text-align: center;
+}
+
+button {
+  border-radius: 30px;
+  border: 1px solid #c822a4;
+  color: #fff;
+  background: #c822a4;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+div.card-place-center img {
+  width: 200px;
+  height: 300px;
+}
+/*# sourceMappingURL=blackJack.css.map */
