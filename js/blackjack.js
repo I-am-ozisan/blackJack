@@ -210,14 +210,14 @@ function calcDrawHand(drawHand) {
         }
         //Aの処遇判定
         if (handNum === 1) {
-            handNum = 10;
+            handNum = 11;
             aceFlg = true;
         }
         drawHandSum = drawHandSum + handNum;
     });
     //Aの処遇判定
     if (aceFlg && drawHandSum >= 22) {
-        drawHandSum = drawHandSum - 9;
+        drawHandSum = drawHandSum - 10;
     }
 
     return drawHandSum;
