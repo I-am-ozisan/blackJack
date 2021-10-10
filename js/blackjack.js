@@ -26,7 +26,7 @@ const loseMessage = "あなたの負けです";
 const blackJackMessage = "ブラックジャックです";
 
 //裏側表示のパス
-const basePass = "../img/";
+const basePass = "img/";
 const backPicturePass = "card_back.png";
 
 
@@ -157,7 +157,7 @@ function invalidButton() {
  */
 function displayDrawHand(drawHand, playFlag) {
     $.each(drawHand, function(index, value) {
-        let appendImgClass = '<img src=../img/' + value + ">";
+        let appendImgClass = '<img src=' + basePass + value + '>';
         let appendDivClass = '<div class="card-place">' + appendImgClass + '</div>';
         if (playFlag) {
             //プレイヤーのトランプを画面表示
